@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CribListingComponent } from './crib-listing/crib-listing.component';
 import { CribCardComponent } from './crib-card/crib-card.component';
+import { CribService } from './crib-listing/crib-listing.service';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { CribCardComponent } from './crib-card/crib-card.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [AuthService],
+  providers: [CribService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

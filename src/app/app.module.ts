@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CribListingComponent } from './crib-listing/crib-listing.component';
 import { CribCardComponent } from './crib-card/crib-card.component';
 import { CribService } from './crib-listing/crib-listing.service';
+import { AddListingFormComponent } from './add-listing-form/add-listing-form.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CribService } from './crib-listing/crib-listing.service';
     AppComponent,
     CribListingComponent,
     CribCardComponent,
+    AddListingFormComponent,
   ],
   imports: [
     BrowserModule,

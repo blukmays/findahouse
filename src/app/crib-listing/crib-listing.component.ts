@@ -10,15 +10,19 @@ import { Crib } from '../crib'
 export class CribListingComponent implements OnInit {
   
   public cribs: Array<Crib> = [];
+  error: string;
 
   constructor(private _cribService: CribService) { }
 
   ngOnInit() {
     this._cribService.getCrib()
     .subscribe(data => {
-      this.cribs = data
+      this.cribs = data;
       console.log(this.cribs);
     });
+    this._cribService.newCribSubject.subscribe(
+      data => console.log(data)
+    );
   }
 
 }
